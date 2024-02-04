@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chat with GPT-3.5 Turbo</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h2>Chat with GPT-3.5 Turbo</h2>
+    <form method="POST">
+        <input type="text" name="user_input" placeholder="Ask me anything..." required>
+        <button type="submit">Send</button>
+    </form>
+    <div>
+        <p>User: {{ user_input }}</p>
+        <p>Bot: {{ bot_response }}</p>
+    </div>
+</body>
+</html>
